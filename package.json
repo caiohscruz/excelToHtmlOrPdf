@@ -1,0 +1,20 @@
+{
+  "name": "exceltohtmlorpdf",
+  "version": "1.0.0",
+  "description": "Conversor de planilha eletrônica para html ou pdf",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/caiohscruz/excelToHtmlOrPdf.git"
+  },
+  "author": "caiohscruz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/caiohscruz/excelToHtmlOrPdf/issues"
+  },
+  "homepage": "https://github.com/caiohscruz/excelToHtmlOrPdf#readme"
+}
