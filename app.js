@@ -16,6 +16,8 @@ async function main(){
 
     // console.log(users.header) // - test (nº3) to abstract array on table schema
 
+    console.log(users.RowCount)
+
 }
 
 main()

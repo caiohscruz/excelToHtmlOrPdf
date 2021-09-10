@@ -11,7 +11,7 @@ class Reader {
         try {
             return await this.reader(filepath, "utf-8")
         } catch (err) {
-            return undefined
+            console.log(err)
         }
     }
 }
