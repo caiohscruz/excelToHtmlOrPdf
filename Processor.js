@@ -9,7 +9,9 @@ static Process(data){
         cells.push(cols)
     })
       
-    // console.log(cells) - test (nº2) to abstract content into two-dimmensional array
+    // console.log(cells) // - test (nº2) to abstract content into two-dimmensional array
+
+    return cells
 }
 }
 
