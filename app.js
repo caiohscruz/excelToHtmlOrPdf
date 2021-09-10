@@ -1,6 +1,7 @@
 const Processor = require("./Processor")
 var Reader = require("./Reader")
 var Table = require("./Table")
+var HtmlParser = require("./HtmlParser")
 
 var reader = new Reader()
 
@@ -16,7 +17,11 @@ async function main(){
 
     // console.log(users.header) // - test (nº3) to abstract array on table schema
 
-    console.log(users.RowCount)
+    // console.log(users.RowCount) // - test (nº4) to count rows or columms
+
+    var html = await HtmlParser.Parse(users)
+
+    // console.log(html) // - test (nº5) to render a html table
 
 }
 

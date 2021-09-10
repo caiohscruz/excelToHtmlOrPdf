@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/caiohscruz/excelToHtmlOrPdf/issues"
   },
-  "homepage": "https://github.com/caiohscruz/excelToHtmlOrPdf#readme"
+  "homepage": "https://github.com/caiohscruz/excelToHtmlOrPdf#readme",
+  "dependencies": {
+    "ejs": "^3.1.6"
+  }
 }

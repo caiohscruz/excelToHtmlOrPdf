@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Table</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie-edge">
+
+</head>
+
+<body>
+
+    <table>
+        <thead>
+            <% header.forEach(col=>{ %>
+            <th><%= col %></th>
+            <% }) %>
+        </thead>
+        <tbody>
+            <% rows.forEach(row =>{ %>
+            <tr>
+                <% row.forEach(cell =>{ %>
+                <td><%= cell %></td>
+                <% }) %>
+            </tr>
+            <% }) %>
+        </tbody>
+    </table>
+
+</body>
+
+</html>
