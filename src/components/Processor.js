@@ -1,5 +1,7 @@
 class Processor{
 
+// abstract content to two-dimmensional array
+
 static Process(data){
     var rows = data.split("\r\n")
     var cells = []
@@ -9,8 +11,6 @@ static Process(data){
         cells.push(cols)
     })
       
-    // console.log(cells) // - test (nº2) to abstract content into two-dimmensional array
-
     return cells
 }
 }

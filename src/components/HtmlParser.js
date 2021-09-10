@@ -1,8 +1,8 @@
 var ejs = require("ejs")
 
 class HtmlParser {
-    static async Parse(table) {
-        return await ejs.renderFile("./table.ejs", {
+    static async Parse(table, template) {
+        return await ejs.renderFile(template, {
             header: table.header,
             rows: table.rows
         })

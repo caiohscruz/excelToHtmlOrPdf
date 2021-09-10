@@ -1,3 +1,5 @@
+// abstract content into a table schema
+
 class Table {
 
     constructor(arr) {

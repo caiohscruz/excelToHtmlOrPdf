@@ -1,6 +1,8 @@
 const fs = require("fs")
 const util = require("util")
 
+// catch content of a csv file
+
 class Reader {
 
     constructor() {
