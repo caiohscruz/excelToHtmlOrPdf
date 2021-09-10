@@ -9,7 +9,7 @@ async function CreatePdf(filename, filepath, template){
 }
 
 filename="teste"
-filepath="../public/users.csv"
-template="../public/table.ejs"
+filepath="./public/users.csv"
+template="./public/table.ejs"
 
 CreatePdf(filename,filepath, template)
