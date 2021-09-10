@@ -12,6 +12,7 @@ class Writer {
         await this.writer(filename, data)
         return true
         } catch (err) {
+            console.log("Erro ao criar .html - verifique FILENAME")
             console.log(err)
             return false
         }

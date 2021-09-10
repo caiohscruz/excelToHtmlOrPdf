@@ -12,7 +12,8 @@ class Reader {
     async Read(filepath) {
         try {
             return await this.reader(filepath, "utf-8")
-        } catch (err) {
+        }catch(err){
+            console.log("Erro ao usar carregar arquivo - verifique CSV_FILEPATH")
             console.log(err)
         }
     }
