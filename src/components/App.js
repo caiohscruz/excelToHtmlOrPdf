@@ -20,7 +20,9 @@ class App{
     
         // console.log(table.header) // - test (nº3) to abstract array on table schema
     
-        // console.log(table.RowCount) // - test (nº4) to count rows or columms
+        console.log(`A tabela tem ${table.ColumnCount} colunas de dados`)    
+        console.log(`A tabela tem ${table.RowCount} linhas de informação`)
+        // - test (nº4) to count rows or columms
     
         var html = await HtmlParser.Parse(table, template)
     
