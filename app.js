@@ -2,12 +2,13 @@ const Processor = require("./Processor")
 var Reader = require("./Reader")
 var Table = require("./Table")
 var HtmlParser = require("./HtmlParser")
-var Writer = require ("./Writer")
+var Writer = require("./Writer")
+var PDFWriter = require("./PDFWriter")
 
 var reader = new Reader()
 var writer = new Writer()
 
-async function main(){
+async function main() {
     var data = await reader.Read("./users.csv")
 
     // console.log(data) // - test (nº1) to catch file content
@@ -24,8 +25,8 @@ async function main(){
 
     // console.log(html) // - test (nº5) to render a html table
 
-    writer.Write(Date.now()+".html", html) // create html file
-
+    writer.Write(Date.now() + ".html", html) // create html file
+    PDFWriter.WritePDF(Date.now()+".PDF", html)
 }
 
 main()
